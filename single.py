@@ -30,7 +30,6 @@ tracemalloc.start()
 start = time.time()
 
 parse_ukr_net()
-
 base_lib.print_txt('Single', start)
 
 print("Current %d, Peak %d" % tracemalloc.get_traced_memory())

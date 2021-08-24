@@ -41,7 +41,6 @@ if __name__ == "__main__":
     start = time.time()
 
     main()
-
     base_lib.print_txt('Process - #2', start)
 
     print("Current %d, Peak %d" % tracemalloc.get_traced_memory())

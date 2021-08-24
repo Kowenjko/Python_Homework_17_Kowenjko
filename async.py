@@ -38,7 +38,6 @@ if __name__ == "__main__":
     start = time.time()
 
     asyncio.run(main())
-
     base_lib.print_txt('Async - #1', start)
 
     print("Current %d, Peak %d" % tracemalloc.get_traced_memory())

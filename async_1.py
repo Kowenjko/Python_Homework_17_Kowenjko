@@ -3,6 +3,7 @@ import tracemalloc
 import time
 import asyncio
 import base_lib
+from pprint import pprint
 
 data_url = base_lib.loadData()
 
@@ -42,6 +43,7 @@ async def parse_ukr_net():
             await category['source']
             await category['time']
             responses = await asyncio.gather(category['category'], category['title'], category['url'], category['source'], category['time'])
+            pprint(responses)
             data.append(responses)
 
     ukr_data['site'] = base_lib.SELECTED_URL

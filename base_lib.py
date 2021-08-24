@@ -49,7 +49,7 @@ def write_json(address, dictionary):
 
 def print_txt(title, start_time):
     adr = 'result.txt'
-    write_txt(adr, '\n')
+    write_txt(adr, '\n ')
     write_txt(adr, '-'*50)
     write_txt(adr, f'\n{title}\n')
     write_txt(adr, '-'*50)
